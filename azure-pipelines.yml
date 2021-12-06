@@ -2,9 +2,10 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'MyLinuxAgent'
+  vmImage: 'Default'
   demands:
   - npm
+  - agent.name -equals MyAgentPool
 
 variables:
   buildConfiguration: 'Release'
